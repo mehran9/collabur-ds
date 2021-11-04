@@ -1,4 +1,5 @@
 import { create } from '@storybook/theming';
+import { config } from './generated';
 
 export default create({
   base: 'light',
@@ -33,7 +34,7 @@ export default create({
   inputTextColor: 'black',
   inputBorderRadius: 4,
 
-  brandTitle: 'Collabur DS',
-  brandUrl: 'https://collabur.com',
-  brandImage: './assets/images/collabur-logo.svg',
+  brandTitle: config.brandTitle,
+  brandUrl: config.brandUrl,
+  brandImage: config.brandImage,
 });
