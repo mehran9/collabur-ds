@@ -126,6 +126,72 @@ export namespace Components {
          */
         "class": string;
     }
+    interface CdsBrandFavicon {
+        /**
+          * CSS Classes
+         */
+        "class": string;
+        /**
+          * Height (px)
+         */
+        "height"?: number;
+        /**
+          * Size
+         */
+        "size": 'small' | 'medium' | 'large';
+        /**
+          * Variant
+         */
+        "variant": typeof generatedBrands.favicon[number];
+        /**
+          * Width (px)
+         */
+        "width"?: number;
+    }
+    interface CdsBrandIcon {
+        /**
+          * CSS Classes
+         */
+        "class": string;
+        /**
+          * Height (px)
+         */
+        "height"?: number;
+        /**
+          * Size
+         */
+        "size": 'small' | 'medium' | 'large';
+        /**
+          * Variant
+         */
+        "variant": typeof generatedBrands.icons[number];
+        /**
+          * Width (px)
+         */
+        "width"?: number;
+    }
+    interface CdsBrandLogo {
+        /**
+          * CSS Classes
+         */
+        "class": string;
+        /**
+          * Height (px)
+         */
+        "height"?: number;
+        /**
+          * Size
+         */
+        "size": 'small' | 'medium' | 'large';
+        /**
+          * Variant
+         */
+        "variant": typeof generatedBrands.logos[number];
+        /**
+          * Width (px)
+         */
+        "width"?: number;
+    }
     interface CdsBreadcrumb {
         /**
           * Breadcrumb alignment
@@ -2063,6 +2129,24 @@ declare global {
         prototype: HTMLCdsBoxElement;
         new (): HTMLCdsBoxElement;
     };
+    interface HTMLCdsBrandFaviconElement extends Components.CdsBrandFavicon, HTMLStencilElement {
+    }
+    var HTMLCdsBrandFaviconElement: {
+        prototype: HTMLCdsBrandFaviconElement;
+        new (): HTMLCdsBrandFaviconElement;
+    };
+    interface HTMLCdsBrandIconElement extends Components.CdsBrandIcon, HTMLStencilElement {
+    }
+    var HTMLCdsBrandIconElement: {
+        prototype: HTMLCdsBrandIconElement;
+        new (): HTMLCdsBrandIconElement;
+    };
+    interface HTMLCdsBrandLogoElement extends Components.CdsBrandLogo, HTMLStencilElement {
+    }
+    var HTMLCdsBrandLogoElement: {
+        prototype: HTMLCdsBrandLogoElement;
+        new (): HTMLCdsBrandLogoElement;
+    };
     interface HTMLCdsBreadcrumbElement extends Components.CdsBreadcrumb, HTMLStencilElement {
     }
     var HTMLCdsBreadcrumbElement: {
@@ -2496,6 +2580,9 @@ declare global {
         "cds-back-to-top": HTMLCdsBackToTopElement;
         "cds-banner": HTMLCdsBannerElement;
         "cds-box": HTMLCdsBoxElement;
+        "cds-brand-favicon": HTMLCdsBrandFaviconElement;
+        "cds-brand-icon": HTMLCdsBrandIconElement;
+        "cds-brand-logo": HTMLCdsBrandLogoElement;
         "cds-breadcrumb": HTMLCdsBreadcrumbElement;
         "cds-button": HTMLCdsButtonElement;
         "cds-buttons": HTMLCdsButtonsElement;
@@ -2695,6 +2782,72 @@ declare namespace LocalJSX {
           * CSS classes
          */
         "class"?: string;
+    }
+    interface CdsBrandFavicon {
+        /**
+          * CSS Classes
+         */
+        "class"?: string;
+        /**
+          * Height (px)
+         */
+        "height"?: number;
+        /**
+          * Size
+         */
+        "size"?: 'small' | 'medium' | 'large';
+        /**
+          * Variant
+         */
+        "variant"?: typeof generatedBrands.favicon[number];
+        /**
+          * Width (px)
+         */
+        "width"?: number;
+    }
+    interface CdsBrandIcon {
+        /**
+          * CSS Classes
+         */
+        "class"?: string;
+        /**
+          * Height (px)
+         */
+        "height"?: number;
+        /**
+          * Size
+         */
+        "size"?: 'small' | 'medium' | 'large';
+        /**
+          * Variant
+         */
+        "variant"?: typeof generatedBrands.icons[number];
+        /**
+          * Width (px)
+         */
+        "width"?: number;
+    }
+    interface CdsBrandLogo {
+        /**
+          * CSS Classes
+         */
+        "class"?: string;
+        /**
+          * Height (px)
+         */
+        "height"?: number;
+        /**
+          * Size
+         */
+        "size"?: 'small' | 'medium' | 'large';
+        /**
+          * Variant
+         */
+        "variant"?: typeof generatedBrands.logos[number];
+        /**
+          * Width (px)
+         */
+        "width"?: number;
     }
     interface CdsBreadcrumb {
         /**
@@ -4748,6 +4901,9 @@ declare namespace LocalJSX {
         "cds-back-to-top": CdsBackToTop;
         "cds-banner": CdsBanner;
         "cds-box": CdsBox;
+        "cds-brand-favicon": CdsBrandFavicon;
+        "cds-brand-icon": CdsBrandIcon;
+        "cds-brand-logo": CdsBrandLogo;
         "cds-breadcrumb": CdsBreadcrumb;
         "cds-button": CdsButton;
         "cds-buttons": CdsButtons;
@@ -4831,6 +4987,9 @@ declare module "@stencil/core" {
             "cds-back-to-top": LocalJSX.CdsBackToTop & JSXBase.HTMLAttributes<HTMLCdsBackToTopElement>;
             "cds-banner": LocalJSX.CdsBanner & JSXBase.HTMLAttributes<HTMLCdsBannerElement>;
             "cds-box": LocalJSX.CdsBox & JSXBase.HTMLAttributes<HTMLCdsBoxElement>;
+            "cds-brand-favicon": LocalJSX.CdsBrandFavicon & JSXBase.HTMLAttributes<HTMLCdsBrandFaviconElement>;
+            "cds-brand-icon": LocalJSX.CdsBrandIcon & JSXBase.HTMLAttributes<HTMLCdsBrandIconElement>;
+            "cds-brand-logo": LocalJSX.CdsBrandLogo & JSXBase.HTMLAttributes<HTMLCdsBrandLogoElement>;
             "cds-breadcrumb": LocalJSX.CdsBreadcrumb & JSXBase.HTMLAttributes<HTMLCdsBreadcrumbElement>;
             "cds-button": LocalJSX.CdsButton & JSXBase.HTMLAttributes<HTMLCdsButtonElement>;
             "cds-buttons": LocalJSX.CdsButtons & JSXBase.HTMLAttributes<HTMLCdsButtonsElement>;

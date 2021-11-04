@@ -100,7 +100,7 @@ export class Footer implements ComponentInterface {
     }
   }
   renderSocialLinks = () => {
-    if (this.socialLinks.length) {
+    if (this.socialLinks && this.socialLinks.length) {
       return (
         <div class="footer-socials">
           {this._socialLinks.map((social, i) => (

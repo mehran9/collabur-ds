@@ -27,6 +27,7 @@ storybook/
 
 src/core/variables/_assets-path.scss
 src/assets/icons/
+src/assets/brand/
 .storybook/preview-head.html
 
 .cds

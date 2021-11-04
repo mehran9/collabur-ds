@@ -11,10 +11,9 @@ it('Should render properly', async (): Promise<void> => {
   });
 
   expect(page.root).toEqualHtml(`
-    <cds-columns>
-      <div class="columns">
-        <cds-column class="column">
-            Hello, I'm in a column!
+    <cds-columns class="columns">
+      <cds-column class="column">
+          Hello, I'm in a column!
         </cds-column>
       </div>
     </cds-columns>

@@ -37,7 +37,7 @@
     "docs:start": "cd docs && npm run clean && npm run develop",
     "docs:build": "cd docs && npm install && npm run clean && npm run build --prefix-paths && rimraf public/assets/assets",
     "docs:deploy": "cd docs && npm gatsby-plugin-s3 deploy --yes",
-    "collabur:update": "collabur-init && collabur-config && collabur-map && collabur-assets"
+    "collabur:update": "collabur-init && collabur-config && collabur-map && collabur-assets && collabur-brands"
   },
   "dependencies": {
     "@creativebulma/bulma-collapsible": "^1.0.4",
@@ -94,8 +94,9 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-prettier": "^4.0.0",
-    "jest": "^27.2.5",
-    "jest-cli": "^27.2.5",
+    "jest": "^24.9.0",
+    "jest-cli": "^26.6.3",
+    "json-loader": "^0.5.7",
     "make-dir-cli": "^3.0.0",
     "moment": "^2.29.1",
     "node-sass": "^6.0.1",
@@ -117,5 +118,17 @@
     "ts-loader": "^6.2.1",
     "webpack": "^4.41.2"
   },
-  "license": "MIT"
+  "jest": {
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(tsx?|jsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "jsx"
+    ]
+  }
 }

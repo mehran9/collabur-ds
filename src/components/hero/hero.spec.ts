@@ -30,7 +30,7 @@ it('Should render properly', async (): Promise<void> => {
           </div>
         </div>
       </div>
-      <div class='hero-head'>
+      <div class='hero-foot'>
         <div slot='footer'>
           hero footer
         </div>
