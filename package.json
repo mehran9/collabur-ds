@@ -29,7 +29,7 @@
     "storybook": "npm run pre-build:storybook && npm-run-all --parallel watch storybook.run",
     "test:lint:ts": "eslint --ext .ts,.tsx --ignore-path .gitignore src/components/ src/elements/ src/views/",
     "test:lint:scss": "stylelint 'src/**/*.scss' --syntax scss",
-    "pre-build": "collabur-init && collabur-config && collabur-map && collabur-assets && node ./build-scripts/assets-path.js",
+    "pre-build": "npm run collabur:update && node ./build-scripts/assets-path.js",
     "pre-build:storybook": "node ./build-scripts/storybook-ds.js",
     "test": "stencil test --spec",
     "test:watch": "stencil test --spec --watch",
